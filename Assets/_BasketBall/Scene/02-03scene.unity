@@ -538,6 +538,7 @@ GameObject:
   - component: {fileID: 902390443}
   - component: {fileID: 902390442}
   - component: {fileID: 902390444}
+  - component: {fileID: 902390445}
   m_Layer: 0
   m_Name: PanelCollider
   m_TagString: Untagged
@@ -582,6 +583,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.8152089, y: 1.1224799, z: 0.093904495}
   m_Center: {x: 0, y: 0, z: -0.06}
+--- !u!114 &902390445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 902390441}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 901086ad073f61b4ab2f48c1152eec34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocityMultiplicator: 0.3
 --- !u!1 &964220997
 GameObject:
   m_ObjectHideFlags: 0
@@ -941,8 +954,8 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1336830247}
-  - component: {fileID: 1336830249}
   - component: {fileID: 1336830248}
+  - component: {fileID: 1336830249}
   m_Layer: 0
   m_Name: Score Collider
   m_TagString: Untagged
@@ -957,8 +970,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1336830246}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.46125, y: 0.904, z: 2.702}
-  m_LocalScale: {x: 0.70404613, y: 0.704046, z: 0.704046}
+  m_LocalPosition: {x: 1.552, y: 3.078, z: 8.986}
+  m_LocalScale: {x: 0.13001111, y: 0.005527208, z: 0.1288298}
   m_Children: []
   m_Father: {fileID: 141472263}
   m_RootOrder: 1
@@ -982,8 +995,8 @@ MonoBehaviour:
   - {fileID: 2058960161}
   - {fileID: 289457153}
   cptPosition: 0
---- !u!136 &1336830249
-CapsuleCollider:
+--- !u!65 &1336830249
+BoxCollider:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
@@ -991,10 +1004,9 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.02
-  m_Height: 0.04
-  m_Direction: 1
-  m_Center: {x: 1.56, y: 3.02, z: 8.99}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1441581539
 GameObject:
   m_ObjectHideFlags: 0

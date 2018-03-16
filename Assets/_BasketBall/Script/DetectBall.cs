@@ -33,14 +33,14 @@ public class DetectBall : MonoBehaviour {
 
     void SetPlayerPosition(int pos)
     {
-        if (pos<=playerPositions.Length)
+        if (pos<playerPositions.Length)
         {
         player.transform.position = playerPositions[pos].position;
         }
         else
         {
-            cptPosition = 0;
             player.transform.position = playerPositions[0].position;
+            cptPosition = 0;
         }
     }
 }
