@@ -39,6 +39,7 @@ public class DetectBall : MonoBehaviour {
         }
         else
         {
+            cptPosition = 0;
             player.transform.position = playerPositions[0].position;
         }
     }

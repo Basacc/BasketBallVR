@@ -6,7 +6,7 @@ PhysicMaterial:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: BasketBallBounce
-  dynamicFriction: 0.1
+  dynamicFriction: 8.63
   staticFriction: 0.1
   bounciness: 0.7
   frictionCombine: 1

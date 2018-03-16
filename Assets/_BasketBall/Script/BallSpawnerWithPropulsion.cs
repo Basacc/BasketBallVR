@@ -15,7 +15,7 @@ public class BallSpawnerWithPropulsion : BallSpawner {
 
         if (rigidBodyOfBall != null)
         {
-            rigidBodyOfBall.AddForce(forceDirection.forward * forceIntensity, ForceMode.Impulse);
+            rigidBodyOfBall.AddForce(CalcVelocity(), ForceMode.Impulse);
         }
     }
 
@@ -23,5 +23,17 @@ public class BallSpawnerWithPropulsion : BallSpawner {
     {
         Vector3 velocity = forceDirection.forward * forceIntensity;
         return velocity;
+    }
+
+    public Vector3 DecreaseVelocity(Vector3 v)
+    {
+        v = v * 0.5f;
+        return v;
+    }
+    
+    private void OnTriggerEnter(Collider other)
+    {
+        Rigidbody rigidBodyOfBall = lastCreatedObject.GetComponent<Rigidbody>();
+        rigidBodyOfBall.AddForce(DecreaseVelocity(CalcVelocity()), ForceMode.VelocityChange);
     }
 }
