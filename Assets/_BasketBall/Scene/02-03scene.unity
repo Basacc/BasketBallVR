@@ -528,6 +528,47 @@ MonoBehaviour:
   lastCreatedObject: {fileID: 0}
   forceDirection: {fileID: 1142566322}
   forceIntensity: 11
+--- !u!1 &902390441
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 902390443}
+  - component: {fileID: 902390442}
+  m_Layer: 0
+  m_Name: PanelCollider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &902390442
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 902390441}
+  m_Material: {fileID: 13400000, guid: d1f75b57c4d065c4db8259a6843854b4, type: 2}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.8152089, y: 1.1224799, z: 0.093904495}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &902390443
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 902390441}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.233, y: 3.649, z: 22.02}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &964220997
 GameObject:
   m_ObjectHideFlags: 0
@@ -1509,18 +1550,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.44096214, y: 2.9592829, z: 0.36634064}
   m_Center: {x: -0.04519573, y: 1.4829869, z: 14.553009}
---- !u!65 &1709896911
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1709896907}
-  m_Material: {fileID: 13400000, guid: d1f75b57c4d065c4db8259a6843854b4, type: 2}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.8152089, y: 1.1224799, z: 0.093904495}
-  m_Center: {x: -0.0018630028, y: 3.4032109, z: 12.862397}
 --- !u!65 &1709896912
 BoxCollider:
   m_ObjectHideFlags: 0
